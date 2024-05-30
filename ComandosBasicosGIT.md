@@ -51,11 +51,3 @@
 ### Envia o conteúdo do repositório local, atualizando automaticamente o repositório remoto
 
     git push
-
-### Either specify the URL from the command-line or configure a remote repository using
-
-    git remote add <name> <url> git (remote add origin https://github.com/fnddavi/...)
-
-and then push using the remote name
-
-    git push <name> (git push -u origin main)
