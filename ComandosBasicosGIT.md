@@ -31,8 +31,12 @@
 ### Uma branch nada mais é do que uma ramificação dentro do repositório. Este comando pode ser utilizado de diversas maneiras
 
     git branch // Mostra as branches existentes em um repositório
-    git branch nome_da_branch // Cria uma nova branch
-    git branch -M nome_da_branch // Renomeia a branch atual
+    git branch <nome_da_branch> // Cria uma nova branch
+    git branch -M <nome_da_branch> // Renomeia a branch atual
+
+#### Permite mudar e criar uma nova branch com base em outra
+
+    git checkout -b <nome da branch de origem> <nome da nova branch>
 
 ### Exibe um histórico de commits. Este comando pode ser utilizado de diversas formas
 
