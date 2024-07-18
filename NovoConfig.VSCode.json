@@ -1,0 +1,157 @@
+{
+    "explorer.confirmDragAndDrop": false,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[sql]": {
+        "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+    },
+    "workbench.startupEditor": "none",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.wordWrap": "on",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "git.openRepositoryInParentFolders": "never",
+    "cloudcode.duetAI.project": "civic-polymer-404700",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "explorer.compactFolders": false,
+    "git.autofetch": true,
+    "editor.largeFileOptimizations": false,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.colorCustomizations": {
+        "editor.background": "#222222",
+        "editor.foreground": "#F8F8F2",
+        "editorCursor.foreground": "#F8F8F0",
+        "editor.lineHighlightBackground": "#3d3d3d",
+        "editor.selectionBackground": "#49483E",
+        "editor.inactiveSelectionBackground": "#3E3D32",
+        "editorIndentGuide.background": "#3B3A32",
+        "editorIndentGuide.activeBackground": "#9D550F",
+        "editorWhitespace.foreground": "#3B3A32"
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "comment",
+                    "comment.block.documentation"
+                ],
+                "settings": {
+                    "foreground": "#42413a"
+                }
+            },
+            {
+                "scope": [
+                    "constant",
+                    "constant.character",
+                    "constant.character.escape",
+                    "constant.numeric",
+                    "constant.other",
+                    "constant.regexp",
+                    "variable.other.enummember"
+                ],
+                "settings": {
+                    "foreground": "#AE81FF"
+                }
+            },
+            {
+                "scope": [
+                    "entity",
+                    "entity.name",
+                    "entity.name.class",
+                    "entity.name.function",
+                    "entity.name.method"
+                ],
+                "settings": {
+                    "foreground": "#A6E22E"
+                }
+            },
+            {
+                "scope": [
+                    "keyword",
+                    "keyword.control",
+                    "keyword.operator",
+                    "keyword.other.new"
+                ],
+                "settings": {
+                    "foreground": "#F92672"
+                }
+            },
+            {
+                "scope": [
+                    "storage",
+                    "storage.type",
+                    "storage.modifier"
+                ],
+                "settings": {
+                    "foreground": "#66D9EF"
+                }
+            },
+            {
+                "scope": [
+                    "string",
+                    "string.quoted",
+                    "string.quoted.double",
+                    "string.quoted.single",
+                    "string.quoted.triple",
+                    "string.template"
+                ],
+                "settings": {
+                    "foreground": "#E6DB74"
+                }
+            },
+            {
+                "scope": [
+                    "support",
+                    "support.class",
+                    "support.constant",
+                    "support.function",
+                    "support.type"
+                ],
+                "settings": {
+                    "foreground": "#66D9EF"
+                }
+            },
+            {
+                "scope": [
+                    "variable",
+                    "variable.language",
+                    "variable.other",
+                    "variable.parameter"
+                ],
+                "settings": {
+                    "foreground": "#F8F8F2"
+                }
+            },
+            {
+                "scope": [
+                    "invalid",
+                    "invalid.deprecated",
+                    "invalid.illegal"
+                ],
+                "settings": {
+                    "foreground": "#F8F8F0",
+                    "background": "#F92672"
+                }
+            }
+        ]
+    },
+    "workbench.preferredDarkColorTheme": "Monokai",
+    "workbench.colorTheme": "Monokai Dimmed"
+}
