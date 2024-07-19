@@ -2,6 +2,7 @@
 
 Repositorio simples com comandos básicos para uso de tecnologias, ferramentes e frameworks uteis.
 Aqui, por enquanto, ha comandos basicos de:
+
 - NodeJS;
 - Git;
 - GitHub;
