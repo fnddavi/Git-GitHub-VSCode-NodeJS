@@ -37,6 +37,120 @@
     "workbench.colorCustomizations": {
         
     },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "comment",
+                    "comment.block.documentation"
+                ],
+                "settings": {
+                    "foreground": "#75715E"
+                }
+            },
+            {
+                "scope": [
+                    "constant",
+                    "constant.character",
+                    "constant.character.escape",
+                    "constant.numeric",
+                    "constant.other",
+                    "constant.regexp",
+                    "variable.other.enummember"
+                ],
+                "settings": {
+                    "foreground": "#9b65ff"
+                }
+            },
+            {
+                "scope": [
+                    "entity",
+                    "entity.name",
+                    "entity.name.class",
+                    "entity.name.function",
+                    "entity.name.method",
+                    "entity.name.module"
+                ],
+                "settings": {
+                    "foreground": "#A6E22E     "
+                }
+            },
+            {
+                "scope": [
+                    "keyword",
+                    "keyword.control",
+                    "keyword.operator",
+                    "keyword.other.new"
+                ],
+                "settings": {
+                    "foreground": "#ff005d"
+                }
+            },
+            {
+                "scope": [
+                    "storage",
+                    "storage.type",
+                    "storage.modifier"
+                ],
+                "settings": {
+                    "foreground": "#66D9EF"
+                }
+            },
+            {
+                "scope": [
+                    "string",
+                    "string.quoted",
+                    "string.quoted.double",
+                    "string.quoted.single",
+                    "string.quoted.triple",
+                    "string.template"
+                ],
+                "settings": {
+                    "foreground": "#E6DB74"
+                }
+            },
+            {
+                "scope": [
+                    "support",
+                    "support.class",
+                    "support.constant",
+                    "support.function",
+                    "support.type",
+                    "support.module     "
+                ],
+                "settings": {
+                    "foreground": "#66D9EF      " 
+                }
+            },
+            {
+                "scope": [
+                    "variable",
+                    "variable.language",
+                    "variable.other",
+                    "variable.parameter"
+                ],
+                "settings": {
+                    "foreground": "#F8F8F2"
+                }
+            },
+            {
+                "scope": [
+                    "invalid",
+                    "invalid.deprecated",
+                    "invalid.illegal"
+                ],
+                "settings": {
+                    "foreground": "#F8F8F0",
+                    "background": "#F92672"
+                }
+            }
+        ]
+    },
+
+
+
+
+
     "workbench.preferredDarkColorTheme": "Monokai",
     "workbench.colorTheme": "Monokai Dimmed"
 

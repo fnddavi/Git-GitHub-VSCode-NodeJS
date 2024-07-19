@@ -53,7 +53,7 @@
                     "comment.block.documentation"
                 ],
                 "settings": {
-                    "foreground": "#42413a"
+                    "foreground": "#75715E"
                 }
             },
             {
@@ -67,7 +67,7 @@
                     "variable.other.enummember"
                 ],
                 "settings": {
-                    "foreground": "#AE81FF"
+                    "foreground": "#9b65ff"
                 }
             },
             {
@@ -76,10 +76,11 @@
                     "entity.name",
                     "entity.name.class",
                     "entity.name.function",
-                    "entity.name.method"
+                    "entity.name.method",
+                    "entity.name.module"
                 ],
                 "settings": {
-                    "foreground": "#A6E22E"
+                    "foreground": "#A6E22E     "
                 }
             },
             {
@@ -90,7 +91,7 @@
                     "keyword.other.new"
                 ],
                 "settings": {
-                    "foreground": "#F92672"
+                    "foreground": "#ff005d"
                 }
             },
             {
@@ -122,10 +123,11 @@
                     "support.class",
                     "support.constant",
                     "support.function",
-                    "support.type"
+                    "support.type",
+                    "support.module     "
                 ],
                 "settings": {
-                    "foreground": "#66D9EF"
+                    "foreground": "#66D9EF      " 
                 }
             },
             {
