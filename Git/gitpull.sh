@@ -2,12 +2,12 @@
 
 # Lista de diretórios dos seus repositórios
 diretorios=(
-    "/home/fernando/Área de Trabalho/Desinvolvimento/D-Nutri"
-    "/home/fernando/Área de Trabalho/Desinvolvimento/IoT"
-    "/home/fernando/Área de Trabalho/Desinvolvimento/LDW"
-    "/home/fernando/Área de Trabalho/Desinvolvimento/PDM"
-    "/home/fernando/Área de Trabalho/Desinvolvimento/PassosComPython"
-    "/home/fernando/Área de Trabalho/Desinvolvimento/Git-GitHub-VSCode-NodeJS"
+    "/home/fernando/Área de Trabalho/Desenvolvimento/D-Nutri"
+    "/home/fernando/Área de Trabalho/Desenvolvimento/IoT"
+    "/home/fernando/Área de Trabalho/Desenvolvimento/LDW"
+    "/home/fernando/Área de Trabalho/Desenvolvimento/PDM"
+    "/home/fernando/Área de Trabalho/Desenvolvimento/PassosComPython"
+    "/home/fernando/Área de Trabalho/Desenvolvimento/Git-GitHub-VSCode-NodeJS"
 )
 
 # Itera sobre cada diretório e executa o git pull
