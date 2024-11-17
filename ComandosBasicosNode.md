@@ -56,3 +56,5 @@ Doc sobre Express: https://www.npmjs.com/package/express
 ## ***USADOS NA AULA DE ESTRUTURAS DE DADOS:
 
     ts-node .\<>
+
+###
