@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # Caminho base do workspace
-WORKSPACE="/home/davi/Área de trabalho/dev"
+WORKSPACE="/home/fernando/Área de trabalho/Dev"
 
 # Percorre todas as subpastas
 for dir in $WORKSPACE/*(/); do
@@ -13,3 +13,7 @@ for dir in $WORKSPACE/*(/); do
     cd "$WORKSPACE"
   fi
 done
+
+echo "Script concluído!"
+echo "Pressione Enter para fechar..."
+read -r
