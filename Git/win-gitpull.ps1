@@ -1,26 +1,26 @@
-# Script PowerShell para git fetch e git pull em todos os projetos
-# Para acentos não truncarem
-[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
-
-# Mensagem inicial
-Write-Host ">> Iniciando Script para 'git fetch' e 'git pull'" -ForegroundColor Green
-
-# Lista de diretórios dos seus repositórios
-$diretorios = @(
-    "D:\Fernando\Desenvolvimento\D-care",
-    "D:\Fernando\Desenvolvimento\D-FireTrack", 
-    "D:\Fernando\Desenvolvimento\FernandoDavi",
-    "D:\Fernando\Desenvolvimento\FormularioComPython",
-    "D:\Fernando\Desenvolvimento\Git-GitHub-VSCode-NodeJS",
-    "D:\Fernando\Desenvolvimento\LabDevMulti",
-    "D:\Fernando\Desenvolvimento\Machine-Learning",
-    "D:\Fernando\Desenvolvimento\PDM-II",
-    "D:\Fernando\Desenvolvimento\QualidadeTesteSoftware",
-    "D:\Fernando\Desenvolvimento\ra2581392313029",
-    "D:\Fernando\Desenvolvimento\SDA"
+<#
+ .SYNOPSIS
+    Script PowerShell para executar 'git fetch' e 'git pull' em todos os repositórios Git dentro de um diretório base.
+ .DESCRIPTION
+    Este script localiza recursivamente todos os repositórios Git a partir de um diretório raiz
+    e executa 'git fetch' e 'git pull' em cada um deles, exibindo o progresso e um relatório final.
+ .PARAMETER BaseDir
+    O caminho para o diretório raiz onde a busca por repositórios Git começará.
+ .EXAMPLE
+    .\win-gitpull.ps1 -BaseDir "D:\Fernando\Desenvolvimento"
+#>
+param (
+    [string]$BaseDir = "C:\Users\ferna\Dev" # <== Altere aqui para o seu diretório principal de projetos
 )
 
-# Armazena o diretório inicial
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+
+Write-Host ">> Iniciando Script para 'git fetch' e 'git pull'" -ForegroundColor Green
+
+# Procura por repositórios Git recursivamente a partir do diretório base
+Write-Host ">> Procurando por repositórios Git em '$BaseDir'..." -ForegroundColor Cyan
+$diretorios = Get-ChildItem -Path $BaseDir -Recurse -Directory -Filter ".git" | ForEach-Object { $_.Parent.FullName }
+
 $diretorioInicial = Get-Location
 
 # Contador para estatísticas
@@ -28,7 +28,11 @@ $totalRepos = $diretorios.Count
 $sucessos = 0
 $erros = 0
 
-Write-Host ">> Encontrados $totalRepos repositórios para atualizar" -ForegroundColor Cyan
+if ($totalRepos -eq 0) {
+    Write-Host ">> Nenhum repositório Git encontrado em '$BaseDir'." -ForegroundColor Yellow
+    exit
+}
+Write-Host ">> Encontrados $totalRepos repositório(s) para atualizar." -ForegroundColor Cyan
 Write-Host ""
 
 # Itera sobre cada diretório e executa git fetch e git pull
@@ -106,4 +110,4 @@ Write-Host "=" * 50 -ForegroundColor Magenta
 Write-Host "Pressione qualquer tecla para continuar..."
 $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 
-# Atualizado em 19-09-2025
+# Atualizado em 23-11-2025
