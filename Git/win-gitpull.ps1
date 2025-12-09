@@ -15,11 +15,15 @@ param (
 
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
+
 Write-Host ">> Iniciando Script para 'git fetch' e 'git pull'" -ForegroundColor Green
 
 # Procura por repositórios Git recursivamente a partir do diretório base
 Write-Host ">> Procurando por repositórios Git em '$BaseDir'..." -ForegroundColor Cyan
-$diretorios = Get-ChildItem -Path $BaseDir -Recurse -Directory -Filter ".git" | ForEach-Object { $_.Parent.FullName }
+$diretorios = Get-ChildItem -Path $BaseDir -Recurse -Directory -Force |
+    Where-Object { $_.Name -eq ".git" } |
+    ForEach-Object { $_.Parent.FullName }
+
 
 $diretorioInicial = Get-Location
 
@@ -109,5 +113,3 @@ Write-Host "=" * 50 -ForegroundColor Magenta
 # Pausa para ler o resultado
 Write-Host "Pressione qualquer tecla para continuar..."
 $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
-
-# Atualizado em 23-11-2025
